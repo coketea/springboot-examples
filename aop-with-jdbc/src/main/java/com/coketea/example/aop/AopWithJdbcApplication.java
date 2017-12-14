@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AopInvalidWithJdbcApplication {
+public class AopWithJdbcApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AopInvalidWithJdbcApplication.class, args);
+        SpringApplication.run(AopWithJdbcApplication.class, args);
     }
 }
