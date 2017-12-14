@@ -10,6 +10,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>aop-without-jdbc</module>
+        <module>aop-with-jdbc</module>
     </modules>
 
     <properties>
@@ -20,6 +21,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <springboot.version>1.5.9.RELEASE</springboot.version>
         <mysql.version>5.1.29</mysql.version>
+        <mybatis.springboot.version>1.3.1</mybatis.springboot.version>
     </properties>
 
     <dependencyManagement>
@@ -35,6 +37,11 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.springboot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
